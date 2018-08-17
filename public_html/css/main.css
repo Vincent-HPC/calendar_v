@@ -13,8 +13,15 @@
   width: calc(100% / 7);
 }
 
+#days {
+  border-right: 1px solid #ccc;
+}
+
 .day {
-  text-align: right;
+  text-align: center;
+  padding-right: 10px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 
 #dates {
