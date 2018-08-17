@@ -1,0 +1,37 @@
+#calendar {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#header {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.day, .date-block  {
+  float: left;
+  width: calc(100% / 7);
+}
+
+.day {
+  text-align: right;
+}
+
+#dates {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;  
+}
+
+.date-block {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  height: 12vh;
+  padding: 4px;
+}
+
+.date-block.empty{
+  background-color: #eee;
+}
+
+
+
