@@ -41,4 +41,81 @@
 }
 
 
+/* info-panel */
+#info-panel{
+  position: fixed;
+  width: 280px;
+  top: 80px;
+  right: 80px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
 
+#info-panel .open {
+  display: block;
+}
+
+#info-panel .close {
+  position: relative;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#info-panel .title, #info-panel .time-picker  {
+  border-bottom: 1px solid #aaa;
+}
+
+#info-panel .title, #info-panel .time-picker, #info-panel .description {
+  padding: 10px;
+}
+
+.error-msg {
+  display: none;
+}
+
+.error-msg .open {
+  display: block;
+}
+
+.selected-date {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+#description {
+  width: 100%;
+}
+
+#info-panel button {
+  display: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#info-panel.new button.create, #info-panel.new button.cancel {
+  float: left;
+  display: block;
+  width: 50%;
+
+}
+
+#info-panel.update button.update, #info-panel.update button.cancel, #info-panel.update button.delete {
+  float: left;
+  display: block;
+  width: 50%;
+}
+
+#info-panel.new button.create, #info-panel.update button.update{
+  background: #79e423;
+}
+
+#info-panel.update button.cancel {
+  background: #ccc;
+}
+
+#info-panel.update button.delete {
+  width: 100%;
+  background: #de2020;
+}
